@@ -13,6 +13,11 @@ angular.module('followboardApp', [
         // controller: 'MainCtrl'
         controller: 'FollowBoardCtrl'
       })
+      .when('/pixapp', {
+        templateUrl: 'partials/pixapp',
+        // controller: 'MainCtrl'
+        controller: 'PixappCtrl'
+      })
       .when('/', {
         templateUrl: 'partials/main',
         controller: 'MainCtrl'

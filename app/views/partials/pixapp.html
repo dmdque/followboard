@@ -1,0 +1,24 @@
+<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+<!-- <link href="css/pixapp.css" rel="stylesheet">  -->
+<div class="container">
+  <table class="palette">
+    <tr>
+      <td class="swatch" color="white"> </td>
+      <td class="swatch" color="yellow"> </td>
+      <td class="swatch" color="orange"> </td>
+      <td class="swatch" color="red"> </td>
+      <td class="swatch" color="green"> </td>
+      <td class="swatch" color="blue"> </td>
+    </tr>
+  </table>
+
+  <table class="gridContainer" mosaicGrid>
+  </table>
+
+  <input type="text" class="span2" placeholder="Firstname Lastname" ng-model="name">
+  <div>{{name}}</div>
+  <button id="savePixapp" ng-click="saveGrid()">Save</button>
+  <li ng-repeat="g in colorgrid track by $index">
+    <ul>{{g}}</ul>
+  </li>
+</div>
