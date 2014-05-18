@@ -2,7 +2,12 @@
 
 angular.module('followboardApp')
   .controller('FollowBoardCtrl', function ($scope, $http) {
+    $http.get('/api/getBadFollowers/50').success(function(data) {
+      console.log(data);
+    })
+
     $http.get('/api/getFollowers').success(function(data) {
+      console.log("called api/getFollowers");
       console.log("Data: ", data);
       // $scope.awesomeThings = awesomeThings;
     });
