@@ -9,6 +9,11 @@ angular.module('followboardApp')
     // move this into directive
     // mosaicGrid
     var idCounter = 0;
+    /**
+     * Creates a grid, represented by a table.
+     * Each cell (td) is of .pix and has attributes representing
+     * its color and other properties
+     */
     var createGrid = function(width, height){
       var grid = $(document.createElement("table"))
         .addClass("grid");
